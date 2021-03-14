@@ -1,0 +1,97 @@
+:root{
+    --themecolor: rgb(197, 185, 9);
+    --bgcolor: rgb(88, 86, 86);
+}
+
+
+
+body{
+    background-color: var(--bgcolor)
+}
+header{
+margin: 20px 70px 50px 70px;
+}
+
+h1{
+    text-align: center;
+    color: var(--themecolor);
+}
+
+h1 + p {
+    color: white;
+    margin: 0px 50px 0px 50px;
+    text-align-last: center;
+    
+}
+
+     
+.Container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+       
+
+}
+
+
+article{
+    box-sizing: border-box;
+    border: white 3px dotted;
+    width: 30%;
+    max-height: 50% ;
+    margin: 15px;
+
+}
+
+
+article h2 {
+    background-color:var(--bgcolor);
+    margin: -16px 15px 5px 15px;
+    color: var(--themecolor);
+    border: white 2px solid;
+    border-radius: 5px;
+    
+}
+
+article p{
+    margin: 15px;
+    color: var(--themecolor);
+}
+
+article  pre{
+    margin: 15px;
+    border-radius: 10px;
+    background-color: var(--themecolor);
+    color: white;
+    
+}
+
+
+footer h2{
+    color: var(--themecolor);
+    text-align:center;
+    margin: 50px;
+
+}
+
+@media screen and (max-width: 992px) {
+
+    article{
+        width: 46%;
+        margin: 15px;
+    
+    }
+    
+  }
+
+  
+@media screen and (max-width: 768px) {
+
+    article{
+        width: 100%;
+        margin: 15px;
+    }
+    
+  }
+  
+  
